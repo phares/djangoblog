@@ -1,0 +1,50 @@
+in oue blog
+
+Features
+=============
+Blog will have the following features
+
+1. Post (Table in database)
+2. Categories (Table in database)
+3. Tag (Table in database)
+4. Author (Table in database)
+
+Relationships between our tables
+====================================
+
+1. Post can have many categories and a category can have many posts
+   (Relationship between Post and Category Table)  (ManyToMany Relation)
+2. A tag can have many post and a post can have many tah (ManyToMany relation)
+3. Author can have many posts and a post can have a sigle author (OneToMany relation)
+   [no post can be written by more than one author]
+
+Attributes for tables
+=======================
+
+Post
+====
+ title
+1.
+2.created_date
+3. body
+4. tags
+5. Categories
+6. Author
+
+Categories
+============
+
+1. cat_name
+2. cat_description
+
+Author
+========
+
+1. Author name
+2. Author email (not mandatory)
+3. Author bio
+
+Tag
+====
+
+1. tag_name
