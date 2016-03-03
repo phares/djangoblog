@@ -3,6 +3,29 @@
 
 
 {% block content %}
-    {{mydata}}
-    <h1>This is index.html file</h1>
+
+<div class="container">
+  <div class="jumbotron">
+    <h1>Django blog</h1>
+    <p>Testing bootstrapt index.html page</p>
+  </div>
+  <div class="row">
+    <div class="col-sm-4">
+      <h3>Column 1</h3>
+      <p>{{mydata}}</p>
+      <p>Welcome to my blog ...</p>
+    </div>
+    <div class="col-sm-4">
+      <h3>Column 2</h3>
+      <p>{{mydata}}</p>
+      <p>Welcome to my blog ...</p>
+    </div>
+    <div class="col-sm-4">
+      <h3>Column 3</h3>
+      <p>{{mydata}}</p>
+      <p>Welcome to my blog ...</p>
+    </div>
+  </div>
+</div>
+
 {% endblock content %}
